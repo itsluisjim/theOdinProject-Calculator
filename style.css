@@ -22,20 +22,31 @@ body {
     padding: 20px;
     font-size: 30px;
 }
-.zero {
+.zero, .clear {
     grid-column: span 2;
 }
 .output {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    justify-content: space-around;
     grid-column: span 4;
-    height: 100px;
+    min-height: 100px;
+    background-color: white;
+    font-size: 40px;
+    padding: 10px;
+}
+.output .previous-operand {
+    color: gray;
+    font-size: 25px;
 }
 .clear {
     background-color: rgb(255, 117, 117);
 }
-.delete {
+#del {
     background-color: rgb(255, 255, 141);
 }
-.mod,.divide,.times,.minus,.plus {
+.operator{
     background-color: rgb(126, 196, 250);
 }
 .equal {
